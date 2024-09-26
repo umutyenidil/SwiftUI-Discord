@@ -6,10 +6,61 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 0) {
+                    Color.yellow
+                        .frame(height: 200)
+                    
+                    ZStack(alignment: .topLeading) {
+                        Color.black
+                            .frame(height: 140)
+                        
+                        VStack(alignment: .leading) {
+                            KFImage(URL(string: "https://picsum.photos/512"))
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100)
+                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                .background {
+                                    Circle()
+                                        .fill(.black)
+                                        .padding(-8)
+                                }
+                            
+                            Text("Umut Yenidil")
+                                .font(.title2)
+                                .bold()
+                            
+                            Text("h0pey")
+                                .font(.callout)
+                        }
+                        .padding(.leading)
+                        .offset(y: -50)
+                    }
+                    
+                    ProfileNavigationLink(title: "Account", icon: "person.crop.square.fill")
+                    
+                    Divider()
+                    
+                    ProfileNavigationLink(title: "Profile", icon: "pencil")
+                    
+                    Divider()
+                    
+                    Button("Logout") {
+                        
+                    }
+                    .foregroundStyle(.red)
+                    .padding()
+                }
+            }
+            .background(Color(.background))
+        }
+        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
     }
 }
 

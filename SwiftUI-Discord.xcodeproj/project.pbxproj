@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E838F5EB2CA545F300D1D18F /* ProfileNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5EA2CA545F300D1D18F /* ProfileNavigationLink.swift */; };
 		E8760EC82CA3F2F800114831 /* SwiftUI_DiscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EC72CA3F2F800114831 /* SwiftUI_DiscordApp.swift */; };
 		E8760ECA2CA3F2F800114831 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EC92CA3F2F800114831 /* ContentView.swift */; };
 		E8760ECC2CA3F2F900114831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8760ECB2CA3F2F900114831 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E838F5EA2CA545F300D1D18F /* ProfileNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationLink.swift; sourceTree = "<group>"; };
 		E8760EC42CA3F2F800114831 /* SwiftUI-Discord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Discord.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8760EC72CA3F2F800114831 /* SwiftUI_DiscordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DiscordApp.swift; sourceTree = "<group>"; };
 		E8760EC92CA3F2F800114831 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E838F5E92CA545E500D1D18F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E838F5EA2CA545F300D1D18F /* ProfileNavigationLink.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		E8760EBB2CA3F2F800114831 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 		E8760EDA2CA3F38F00114831 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E838F5E92CA545E500D1D18F /* Component */,
 				E8760EDC2CA3F3A100114831 /* View */,
 			);
 			path = Profile;
@@ -304,6 +315,7 @@
 				E8760EC82CA3F2F800114831 /* SwiftUI_DiscordApp.swift in Sources */,
 				E8760EE92CA3F55700114831 /* ChatView.swift in Sources */,
 				E8760EF72CA4029500114831 /* ChatRoomView.swift in Sources */,
+				E838F5EB2CA545F300D1D18F /* ProfileNavigationLink.swift in Sources */,
 				E8760EE32CA3F3C000114831 /* SearchView.swift in Sources */,
 				E8760ED62CA3F31B00114831 /* MainTabView.swift in Sources */,
 				E8760EFD2CA40BCA00114831 /* ChannelModel.swift in Sources */,
