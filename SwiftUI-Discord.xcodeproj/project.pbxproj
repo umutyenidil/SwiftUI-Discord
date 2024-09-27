@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E838F5EB2CA545F300D1D18F /* ProfileNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5EA2CA545F300D1D18F /* ProfileNavigationLink.swift */; };
+		E838F5F12CA5480500D1D18F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F02CA5480500D1D18F /* AuthView.swift */; };
+		E838F5F32CA54F1200D1D18F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F22CA54F1200D1D18F /* AuthViewModel.swift */; };
+		E838F5F52CA54F3700D1D18F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F42CA54F3700D1D18F /* LoginView.swift */; };
+		E838F5F72CA54F4B00D1D18F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F62CA54F4B00D1D18F /* RegisterView.swift */; };
+		E838F5F92CA5500B00D1D18F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F82CA5500B00D1D18F /* LoginViewModel.swift */; };
 		E8760EC82CA3F2F800114831 /* SwiftUI_DiscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EC72CA3F2F800114831 /* SwiftUI_DiscordApp.swift */; };
 		E8760ECA2CA3F2F800114831 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EC92CA3F2F800114831 /* ContentView.swift */; };
 		E8760ECC2CA3F2F900114831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8760ECB2CA3F2F900114831 /* Assets.xcassets */; };
@@ -25,10 +30,22 @@
 		E8760EF92CA402C800114831 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EF82CA402C800114831 /* MessageInputView.swift */; };
 		E8760EFB2CA4055200114831 /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EFA2CA4055200114831 /* ServerModel.swift */; };
 		E8760EFD2CA40BCA00114831 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EFC2CA40BCA00114831 /* ChannelModel.swift */; };
+		E8BE12C12CA68A99002085E6 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12C02CA68A99002085E6 /* EmailView.swift */; };
+		E8BE12C52CA68B82002085E6 /* DiscordTextFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12C42CA68B82002085E6 /* DiscordTextFormField.swift */; };
+		E8BE12CA2CA68D3F002085E6 /* DiscordForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12C92CA68D3F002085E6 /* DiscordForm.swift */; };
+		E8BE12CD2CA6966B002085E6 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12CC2CA6966B002085E6 /* NameView.swift */; };
+		E8BE12CF2CA6979A002085E6 /* UsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12CE2CA6979A002085E6 /* UsernameView.swift */; };
+		E8BE12D12CA69800002085E6 /* DiscordSecureFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12D02CA69800002085E6 /* DiscordSecureFormField.swift */; };
+		E8BE12D32CA698DB002085E6 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12D22CA698DB002085E6 /* AgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E838F5EA2CA545F300D1D18F /* ProfileNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationLink.swift; sourceTree = "<group>"; };
+		E838F5F02CA5480500D1D18F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		E838F5F22CA54F1200D1D18F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		E838F5F42CA54F3700D1D18F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E838F5F62CA54F4B00D1D18F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		E838F5F82CA5500B00D1D18F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E8760EC42CA3F2F800114831 /* SwiftUI-Discord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Discord.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8760EC72CA3F2F800114831 /* SwiftUI_DiscordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DiscordApp.swift; sourceTree = "<group>"; };
 		E8760EC92CA3F2F800114831 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +63,13 @@
 		E8760EF82CA402C800114831 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		E8760EFA2CA4055200114831 /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
 		E8760EFC2CA40BCA00114831 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
+		E8BE12C02CA68A99002085E6 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		E8BE12C42CA68B82002085E6 /* DiscordTextFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordTextFormField.swift; sourceTree = "<group>"; };
+		E8BE12C92CA68D3F002085E6 /* DiscordForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordForm.swift; sourceTree = "<group>"; };
+		E8BE12CC2CA6966B002085E6 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		E8BE12CE2CA6979A002085E6 /* UsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameView.swift; sourceTree = "<group>"; };
+		E8BE12D02CA69800002085E6 /* DiscordSecureFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordSecureFormField.swift; sourceTree = "<group>"; };
+		E8BE12D22CA698DB002085E6 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +88,46 @@
 			isa = PBXGroup;
 			children = (
 				E838F5EA2CA545F300D1D18F /* ProfileNavigationLink.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		E838F5EC2CA547CF00D1D18F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E838F5EF2CA547EB00D1D18F /* Component */,
+				E838F5EE2CA547E700D1D18F /* View */,
+				E838F5ED2CA547DC00D1D18F /* ViewModel */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E838F5ED2CA547DC00D1D18F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E838F5F22CA54F1200D1D18F /* AuthViewModel.swift */,
+				E838F5F82CA5500B00D1D18F /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E838F5EE2CA547E700D1D18F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E838F5F02CA5480500D1D18F /* AuthView.swift */,
+				E838F5F42CA54F3700D1D18F /* LoginView.swift */,
+				E838F5F62CA54F4B00D1D18F /* RegisterView.swift */,
+				E8BE12D22CA698DB002085E6 /* AgeView.swift */,
+				E8BE12C02CA68A99002085E6 /* EmailView.swift */,
+				E8BE12CC2CA6966B002085E6 /* NameView.swift */,
+				E8BE12CE2CA6979A002085E6 /* UsernameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E838F5EF2CA547EB00D1D18F /* Component */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -109,6 +173,8 @@
 		E8760ED72CA3F37900114831 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E838F5EC2CA547CF00D1D18F /* Auth */,
+				E8BE12C22CA68B65002085E6 /* Components */,
 				E8760EE62CA3F54400114831 /* Chat */,
 				E8760ED82CA3F38400114831 /* Home */,
 				E8760EE42CA3F3EC00114831 /* MainTab */,
@@ -228,6 +294,24 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E8BE12C22CA68B65002085E6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E8BE12C32CA68B72002085E6 /* View */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E8BE12C32CA68B72002085E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8BE12C42CA68B82002085E6 /* DiscordTextFormField.swift */,
+				E8BE12C92CA68D3F002085E6 /* DiscordForm.swift */,
+				E8BE12D02CA69800002085E6 /* DiscordSecureFormField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,20 +388,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E838F5F52CA54F3700D1D18F /* LoginView.swift in Sources */,
 				E8760ECA2CA3F2F800114831 /* ContentView.swift in Sources */,
 				E8760EDF2CA3F3AE00114831 /* HomeView.swift in Sources */,
 				E8760EF52CA3FFC800114831 /* SideMenuView.swift in Sources */,
 				E8760EE12CA3F3B500114831 /* ProfileView.swift in Sources */,
+				E8BE12D32CA698DB002085E6 /* AgeView.swift in Sources */,
+				E8BE12CD2CA6966B002085E6 /* NameView.swift in Sources */,
 				E8760EED2CA3F8D600114831 /* MessageModel.swift in Sources */,
 				E8760EF92CA402C800114831 /* MessageInputView.swift in Sources */,
+				E838F5F12CA5480500D1D18F /* AuthView.swift in Sources */,
+				E838F5F92CA5500B00D1D18F /* LoginViewModel.swift in Sources */,
+				E838F5F72CA54F4B00D1D18F /* RegisterView.swift in Sources */,
+				E838F5F32CA54F1200D1D18F /* AuthViewModel.swift in Sources */,
+				E8BE12CA2CA68D3F002085E6 /* DiscordForm.swift in Sources */,
 				E8760EFB2CA4055200114831 /* ServerModel.swift in Sources */,
 				E8760EF32CA3F9EE00114831 /* MessageCardView.swift in Sources */,
 				E8760EC82CA3F2F800114831 /* SwiftUI_DiscordApp.swift in Sources */,
+				E8BE12D12CA69800002085E6 /* DiscordSecureFormField.swift in Sources */,
 				E8760EE92CA3F55700114831 /* ChatView.swift in Sources */,
 				E8760EF72CA4029500114831 /* ChatRoomView.swift in Sources */,
 				E838F5EB2CA545F300D1D18F /* ProfileNavigationLink.swift in Sources */,
+				E8BE12C12CA68A99002085E6 /* EmailView.swift in Sources */,
 				E8760EE32CA3F3C000114831 /* SearchView.swift in Sources */,
+				E8BE12CF2CA6979A002085E6 /* UsernameView.swift in Sources */,
 				E8760ED62CA3F31B00114831 /* MainTabView.swift in Sources */,
+				E8BE12C52CA68B82002085E6 /* DiscordTextFormField.swift in Sources */,
 				E8760EFD2CA40BCA00114831 /* ChannelModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
