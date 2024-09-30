@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct UsernameView: View {
-    @Environment(\.authViewModel) var viewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        @Bindable var viewModel = viewModel
         VStack {
             Text("Next, create an account")
                 .font(.title)
@@ -21,20 +20,21 @@ struct UsernameView: View {
             DiscordForm(title: "Account") {
                 DiscordTextFormField(placeholder: "Username", text: $viewModel.registerUsername)
                 
-                DiscordSecureFormField(placeholder: "Parola", text: $viewModel.registerPassword)
+                DiscordSecureFormField(placeholder: "Password", text: $viewModel.registerPassword)
             }
             
             NavigationLink {
                 AgeView()
-                    .environment(viewModel)
+                    .environmentObject(viewModel)
             } label: {
                 Text("Next")
                     .padding()
                     .frame(maxWidth: .infinity)
                     .foregroundStyle(.white)
-                    .background(viewModel.registerEmail.isEmpty || viewModel.registerPassword.isEmpty ? .gray : .discord)
+                    .background(viewModel.registerUsername.isEmpty || viewModel.registerPassword.isEmpty ? .gray : .discord)
             }
-            .disabled(viewModel.registerEmail.isEmpty || viewModel.registerPassword.isEmpty)
+            .disabled(viewModel.registerUsername.isEmpty || viewModel.registerPassword.isEmpty)
+            .animation(.default, value: viewModel.registerUsername.isEmpty || viewModel.registerPassword.isEmpty)
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

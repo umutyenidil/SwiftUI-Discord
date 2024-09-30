@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AuthView: View {
-    @State var viewModel = AuthViewModel()
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         NavigationStack {
@@ -42,7 +42,7 @@ struct AuthView: View {
                 
                 NavigationLink {
                     EmailView()
-                        .environment(viewModel)
+                        .environmentObject(viewModel)
                 } label: {
                         Text("Register")
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -53,7 +53,7 @@ struct AuthView: View {
                 
                 NavigationLink {
                     LoginView()
-                        .environment(viewModel)
+                        .environmentObject(viewModel)
                 } label: {
                         Text("Login")
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)

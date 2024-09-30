@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct AgeView: View {
-    @Environment(\.authViewModel) var viewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     @State private var showDatePicker = false
     
     var body: some View {
-        @Bindable var viewModel = viewModel
         VStack {
             Text("And, how old are you?")
                 .font(.title)
@@ -41,6 +40,7 @@ struct AgeView: View {
                     .background(viewModel.registerDOB == nil ? .gray : .discord)
             }
             .disabled(viewModel.registerDOB == nil)
+            .animation(.default, value: viewModel.registerEmail)
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -90,6 +90,6 @@ extension Binding {
 #Preview {
     NavigationStack {
         AgeView()
-            .environment(AuthViewModel())
+            .environmentObject(AuthViewModel())
     }
 }

@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct EmailView: View {
-    @Environment(\.authViewModel) var viewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        @Bindable var viewModel = viewModel
         VStack {
             Text("Enter email")
                 .font(.title)
@@ -24,7 +23,7 @@ struct EmailView: View {
             
             NavigationLink {
                 NameView()
-                    .environment(viewModel)
+                    .environmentObject(viewModel)
             } label: {
                 Text("Next")
                     .padding()
@@ -33,6 +32,7 @@ struct EmailView: View {
                     .background(viewModel.registerEmail.isEmpty ? .gray : .discord)
             }
             .disabled(viewModel.registerEmail.isEmpty)
+            .animation(.default, value: viewModel.registerEmail)
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

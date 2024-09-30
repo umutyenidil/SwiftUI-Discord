@@ -9,10 +9,9 @@
 import SwiftUI
 
 struct NameView: View {
-    @Environment(\.authViewModel) var viewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        @Bindable var viewModel = viewModel
         VStack {
             Text("What's your name?")
                 .font(.title)
@@ -25,7 +24,7 @@ struct NameView: View {
             
             NavigationLink {
                 UsernameView()
-                    .environment(viewModel)
+                    .environmentObject(viewModel)
             } label: {
                 Text("Next")
                     .padding()
@@ -34,6 +33,7 @@ struct NameView: View {
                     .background(viewModel.registerDisplayName.isEmpty ? .gray : .discord)
             }
             .disabled(viewModel.registerDisplayName.isEmpty)
+            .animation(.default, value: viewModel.registerDisplayName)
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

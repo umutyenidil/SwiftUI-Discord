@@ -9,6 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct ProfileView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -52,7 +53,7 @@ struct ProfileView: View {
                     Divider()
                     
                     Button("Logout") {
-                        
+                        authViewModel.logout()
                     }
                     .foregroundStyle(.red)
                     .padding()

@@ -1,5 +1,5 @@
 {
-  "originHash" : "917a2b512148612347b307b5f8d624e74df48af36fa322c80901a86fc0e1317f",
+  "originHash" : "152c92da5805e36b719c9e591a4aa9dc5c335609296c71fc05ac7650eab6da14",
   "pins" : [
     {
       "identity" : "kingfisher",
@@ -8,6 +8,51 @@
       "state" : {
         "revision" : "33696a71dd4d71f1b0f781ade11a48ba5549581a",
         "version" : "8.0.3"
+      }
+    },
+    {
+      "identity" : "multipartformdata",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/grdsdev/MultipartFormData",
+      "state" : {
+        "revision" : "ed7abea9cfc6c3b5e77a73fe6842c57a372d2017",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "supabase-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase/supabase-swift",
+      "state" : {
+        "revision" : "b159fb95a300cb2e85a193688748e2a10b612dea",
+        "version" : "2.20.0"
+      }
+    },
+    {
+      "identity" : "swift-concurrency-extras",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-concurrency-extras",
+      "state" : {
+        "revision" : "6054df64b55186f08b6d0fd87152081b8ad8d613",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto.git",
+      "state" : {
+        "revision" : "81bee98e706aee68d39ed5996db069ef2b313d62",
+        "version" : "3.7.1"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "27d767d643fa2cf083d0a73d74fa84cacb53e85c",
+        "version" : "1.4.1"
       }
     }
   ],

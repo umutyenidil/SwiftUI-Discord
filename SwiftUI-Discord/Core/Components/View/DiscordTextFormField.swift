@@ -15,6 +15,7 @@ struct DiscordTextFormField: View {
         TextField(placeholder, text: $text)
             .padding()
             .background(.ultraThinMaterial)
+            .textInputAutocapitalization(.never)
     }
 }
 

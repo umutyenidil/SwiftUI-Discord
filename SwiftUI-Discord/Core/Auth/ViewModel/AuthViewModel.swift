@@ -8,32 +8,43 @@
 import Foundation
 import SwiftUI
 
-class AuthViewModel: Observable {
-    var loginEmail = ""
-    var loginPassword = ""
+class AuthViewModel: ObservableObject {
+    @Published var loginEmail = ""
+    @Published var loginPassword = ""
     
-    var registerEmail = ""
-    var registerPassword = ""
-    var registerUsername = ""
-    var registerDisplayName = ""
-    var registerDOB: Date?
+    @Published var registerEmail = ""
+    @Published var registerPassword = ""
+    @Published var registerUsername = ""
+    @Published var registerDisplayName = ""
+    @Published var registerDOB: Date?
     
     func login() {
-        
+        Task {
+            do {
+                try await AuthService.shared.login(email: loginEmail, password: loginPassword)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
     
     func register() {
-        
+        Task {
+            do {
+                try await AuthService.shared.register(email: registerEmail, password: registerPassword)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
-}
-
-private struct AuthViewModelKey: EnvironmentKey {
-    static var defaultValue: AuthViewModel = AuthViewModel()
-}
-
-extension EnvironmentValues {
-    var authViewModel: AuthViewModel {
-        get { self[AuthViewModelKey.self] }
-        set { self[AuthViewModel.self] = newValue }
+    
+    func logout() {
+        Task {
+            do {
+                try await AuthService.shared.logout()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 }

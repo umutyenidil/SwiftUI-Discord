@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @Environment(\.authViewModel) var authViewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        @Bindable var authViewModel = authViewModel
         VStack {
             Text("Welcome back!")
                 .font(.title.bold())
@@ -22,12 +21,12 @@ struct LoginView: View {
             
             
             DiscordForm(title: "Account Information") {
-                DiscordTextFormField(placeholder: "Email Address", text: $authViewModel.loginEmail)
-                DiscordTextFormField(placeholder: "Password", text: $authViewModel.loginEmail)
+                DiscordTextFormField(placeholder: "Email Address", text: $viewModel.loginEmail)
+                DiscordTextFormField(placeholder: "Password", text: $viewModel.loginPassword)
             }
             
             Button {
-                authViewModel.login()
+                viewModel.login()
             } label: {
                 Text("Log In")
                     .padding()

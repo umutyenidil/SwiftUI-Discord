@@ -11,8 +11,8 @@
 		E838F5F12CA5480500D1D18F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F02CA5480500D1D18F /* AuthView.swift */; };
 		E838F5F32CA54F1200D1D18F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F22CA54F1200D1D18F /* AuthViewModel.swift */; };
 		E838F5F52CA54F3700D1D18F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F42CA54F3700D1D18F /* LoginView.swift */; };
-		E838F5F72CA54F4B00D1D18F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F62CA54F4B00D1D18F /* RegisterView.swift */; };
 		E838F5F92CA5500B00D1D18F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838F5F82CA5500B00D1D18F /* LoginViewModel.swift */; };
+		E8706C082CAA90890024EFED /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = E8706C072CAA90890024EFED /* Supabase */; };
 		E8760EC82CA3F2F800114831 /* SwiftUI_DiscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EC72CA3F2F800114831 /* SwiftUI_DiscordApp.swift */; };
 		E8760ECA2CA3F2F800114831 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8760EC92CA3F2F800114831 /* ContentView.swift */; };
 		E8760ECC2CA3F2F900114831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8760ECB2CA3F2F900114831 /* Assets.xcassets */; };
@@ -37,6 +37,12 @@
 		E8BE12CF2CA6979A002085E6 /* UsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12CE2CA6979A002085E6 /* UsernameView.swift */; };
 		E8BE12D12CA69800002085E6 /* DiscordSecureFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12D02CA69800002085E6 /* DiscordSecureFormField.swift */; };
 		E8BE12D32CA698DB002085E6 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12D22CA698DB002085E6 /* AgeView.swift */; };
+		E8BE12E02CA6A332002085E6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE12DF2CA6A332002085E6 /* AuthService.swift */; };
+		E8BE12E32CA6A713002085E6 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = E8BE12E22CA6A713002085E6 /* Auth */; };
+		E8BE12E52CA6A713002085E6 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = E8BE12E42CA6A713002085E6 /* Functions */; };
+		E8BE12E72CA6A713002085E6 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = E8BE12E62CA6A713002085E6 /* PostgREST */; };
+		E8BE12E92CA6A713002085E6 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = E8BE12E82CA6A713002085E6 /* Realtime */; };
+		E8BE12EB2CA6A713002085E6 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = E8BE12EA2CA6A713002085E6 /* Storage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +50,6 @@
 		E838F5F02CA5480500D1D18F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		E838F5F22CA54F1200D1D18F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		E838F5F42CA54F3700D1D18F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		E838F5F62CA54F4B00D1D18F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		E838F5F82CA5500B00D1D18F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E8760EC42CA3F2F800114831 /* SwiftUI-Discord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Discord.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8760EC72CA3F2F800114831 /* SwiftUI_DiscordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DiscordApp.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 		E8BE12CE2CA6979A002085E6 /* UsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameView.swift; sourceTree = "<group>"; };
 		E8BE12D02CA69800002085E6 /* DiscordSecureFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordSecureFormField.swift; sourceTree = "<group>"; };
 		E8BE12D22CA698DB002085E6 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
+		E8BE12DF2CA6A332002085E6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8706C082CAA90890024EFED /* Supabase in Frameworks */,
+				E8BE12EB2CA6A713002085E6 /* Storage in Frameworks */,
+				E8BE12E72CA6A713002085E6 /* PostgREST in Frameworks */,
+				E8BE12E52CA6A713002085E6 /* Functions in Frameworks */,
+				E8BE12E32CA6A713002085E6 /* Auth in Frameworks */,
+				E8BE12E92CA6A713002085E6 /* Realtime in Frameworks */,
 				E8760EF02CA3F9CE00114831 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +128,6 @@
 			children = (
 				E838F5F02CA5480500D1D18F /* AuthView.swift */,
 				E838F5F42CA54F3700D1D18F /* LoginView.swift */,
-				E838F5F62CA54F4B00D1D18F /* RegisterView.swift */,
 				E8BE12D22CA698DB002085E6 /* AgeView.swift */,
 				E8BE12C02CA68A99002085E6 /* EmailView.swift */,
 				E8BE12CC2CA6966B002085E6 /* NameView.swift */,
@@ -282,6 +293,7 @@
 		E8760EEB2CA3F8C400114831 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E8BE12DF2CA6A332002085E6 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -330,6 +342,12 @@
 			name = "SwiftUI-Discord";
 			packageProductDependencies = (
 				E8760EEF2CA3F9CE00114831 /* Kingfisher */,
+				E8BE12E22CA6A713002085E6 /* Auth */,
+				E8BE12E42CA6A713002085E6 /* Functions */,
+				E8BE12E62CA6A713002085E6 /* PostgREST */,
+				E8BE12E82CA6A713002085E6 /* Realtime */,
+				E8BE12EA2CA6A713002085E6 /* Storage */,
+				E8706C072CAA90890024EFED /* Supabase */,
 			);
 			productName = "SwiftUI-Discord";
 			productReference = E8760EC42CA3F2F800114831 /* SwiftUI-Discord.app */;
@@ -361,6 +379,7 @@
 			mainGroup = E8760EBB2CA3F2F800114831;
 			packageReferences = (
 				E8760EEE2CA3F9CE00114831 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E8BE12E12CA6A712002085E6 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			productRefGroup = E8760EC52CA3F2F800114831 /* Products */;
 			projectDirPath = "";
@@ -399,7 +418,6 @@
 				E8760EF92CA402C800114831 /* MessageInputView.swift in Sources */,
 				E838F5F12CA5480500D1D18F /* AuthView.swift in Sources */,
 				E838F5F92CA5500B00D1D18F /* LoginViewModel.swift in Sources */,
-				E838F5F72CA54F4B00D1D18F /* RegisterView.swift in Sources */,
 				E838F5F32CA54F1200D1D18F /* AuthViewModel.swift in Sources */,
 				E8BE12CA2CA68D3F002085E6 /* DiscordForm.swift in Sources */,
 				E8760EFB2CA4055200114831 /* ServerModel.swift in Sources */,
@@ -415,6 +433,7 @@
 				E8760ED62CA3F31B00114831 /* MainTabView.swift in Sources */,
 				E8BE12C52CA68B82002085E6 /* DiscordTextFormField.swift in Sources */,
 				E8760EFD2CA40BCA00114831 /* ChannelModel.swift in Sources */,
+				E8BE12E02CA6A332002085E6 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,13 +647,51 @@
 				minimumVersion = 8.0.3;
 			};
 		};
+		E8BE12E12CA6A712002085E6 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E8706C072CAA90890024EFED /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8BE12E12CA6A712002085E6 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
 		E8760EEF2CA3F9CE00114831 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E8760EEE2CA3F9CE00114831 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		E8BE12E22CA6A713002085E6 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8BE12E12CA6A712002085E6 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		E8BE12E42CA6A713002085E6 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8BE12E12CA6A712002085E6 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		E8BE12E62CA6A713002085E6 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8BE12E12CA6A712002085E6 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		E8BE12E82CA6A713002085E6 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8BE12E12CA6A712002085E6 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		E8BE12EA2CA6A713002085E6 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8BE12E12CA6A712002085E6 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
